@@ -17,6 +17,8 @@ public class BankAccountTest {
 
         // then
         assertEquals(16196.45, bankAccount.checkSaldo());
+
+
     }
     @Test
     public void withdrawsFunds() {
