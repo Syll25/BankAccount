@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78100e1-363d-438f-b722-65618852a000" name="Changes" comment="BankAccount" />
+    <list default="true" id="c78100e1-363d-438f-b722-65618852a000" name="Changes" comment="BankAccount">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CardAnonymizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneNumberUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Timestamp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/CardAnonymizerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/PhoneNumberUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +39,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.BankAccountTest.depositsFunds.executor": "Run",
     "JUnit.BankAccountTest.withdrawsFunds.executor": "Run",
+    "JUnit.CardAnonymizerTest.cardanonymizer.executor": "Run",
+    "JUnit.CardAnonymizerTest.executor": "Run",
+    "JUnit.CardAnonymizerTest.testAnonymizeValidCardNumber.executor": "Run",
+    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_InvalidFormat.executor": "Run",
+    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_UnrecognizedCountryCode.executor": "Run",
+    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -49,8 +64,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BankAccountTest.withdrawsFunds">
-    <configuration name="BankAccountTest.depositsFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CardAnonymizerTest.testAnonymizeInvalidCardNumberLength">
+    <configuration name="CardAnonymizerTest.cardanonymizer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAccount" />
       <extension name="coverage">
         <pattern>
@@ -59,14 +74,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="syll25.BankAccount" />
-      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.BankAccountTest" />
-      <option name="METHOD_NAME" value="depositsFunds" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.CardAnonymizerTest" />
+      <option name="METHOD_NAME" value="cardanonymizer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankAccountTest.withdrawsFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardAnonymizerTest.testAnonymizeInvalidCardNumberLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAccount" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +90,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="syll25.BankAccount" />
-      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.BankAccountTest" />
-      <option name="METHOD_NAME" value="withdrawsFunds" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.CardAnonymizerTest" />
+      <option name="METHOD_NAME" value="testAnonymizeInvalidCardNumberLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardAnonymizerTest.testAnonymizeValidCardNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankAccount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="syll25.BankAccount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.CardAnonymizerTest" />
+      <option name="METHOD_NAME" value="testAnonymizeValidCardNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneNumberUtilTest.testGetCountryByPhoneNumber_UnrecognizedCountryCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankAccount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="syll25.BankAccount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.PhoneNumberUtilTest" />
+      <option name="METHOD_NAME" value="testGetCountryByPhoneNumber_UnrecognizedCountryCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankAccount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="syll25.BankAccount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.PhoneNumberUtilTest" />
+      <option name="METHOD_NAME" value="testGetCountryByPhoneNumber_ValidPolishNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,10 +147,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankAccountTest.withdrawsFunds" />
-        <item itemvalue="JUnit.BankAccountTest.depositsFunds" />
+        <item itemvalue="JUnit.CardAnonymizerTest.testAnonymizeInvalidCardNumberLength" />
+        <item itemvalue="JUnit.CardAnonymizerTest.testAnonymizeValidCardNumber" />
+        <item itemvalue="JUnit.CardAnonymizerTest.cardanonymizer" />
+        <item itemvalue="JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber" />
+        <item itemvalue="JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_UnrecognizedCountryCode" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711037170809</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BankAccount">
+      <option name="closed" value="true" />
+      <created>1711037337652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711037337652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
