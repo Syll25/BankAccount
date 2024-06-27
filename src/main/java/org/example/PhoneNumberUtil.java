@@ -45,9 +45,9 @@ public class PhoneNumberUtil {
                 String country = resultSet.getString("country");
                 countryCodeToCountryMap.put(code, country);
             }
-            String createTableSQL = "CREATE TABLE IF NOT EXISTS CountryCode (" +
+            String createTableSQL = "CREATE TABLE IF NOT EXISTS CountryCodes (" +
                     "Code INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "Country TEXT NOT NULL, ";
+                    "Country TEXT NOT NULL);";
 
             statement.executeUpdate(createTableSQL);
             System.out.println("Table created or already exists.");
