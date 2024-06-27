@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        String sqliteFilePath ="/Users/sylwiabarteczko/Desktop/Pliki/BankAccount";
+
+        PhoneNumberUtil phoneNumberUtil = new PhoneNumberUtil(sqliteFilePath);
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {

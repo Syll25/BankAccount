@@ -1,0 +1,6 @@
+48 Poland
+1 Canada/USA
+44 United Kingdom
+49 Germany
+33 France
+39 Italy
