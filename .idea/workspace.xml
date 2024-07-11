@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78100e1-363d-438f-b722-65618852a000" name="Changes" comment="BankAccount load dla txt oraz sqlite">
+      <change afterPath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/TimeStampTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CountryCode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CountryCode.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneNumberUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneNumberUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Timestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Timestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/PhoneNumberUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/PhoneNumberUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/PhoneNumberUtilTxtFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/syll25/BankAccount/PhoneNumberUtilTxtFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,48 +39,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.BankAccount in BankAccount.executor": "Debug",
-    "JUnit.BankAccountTest.depositsFunds.executor": "Run",
-    "JUnit.BankAccountTest.withdrawsFunds.executor": "Run",
-    "JUnit.CardAnonymizerTest.cardanonymizer.executor": "Run",
-    "JUnit.CardAnonymizerTest.executor": "Run",
-    "JUnit.CardAnonymizerTest.testAnonymizeInvalidCardNumberLength.executor": "Run",
-    "JUnit.CardAnonymizerTest.testAnonymizeValidCardNumber.executor": "Run",
-    "JUnit.PhoneNumberUtilTest.executor": "Run",
-    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_InvalidFormat.executor": "Run",
-    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_UnrecognizedCountryCode.executor": "Run",
-    "JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber.executor": "Debug",
-    "JUnit.PhoneNumberUtilTxtFileTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/sylwiabarteczko/Desktop/Pliki/BankAccount/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAccount in BankAccount.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BankAccountTest.depositsFunds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAccountTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BankAccountTest.withdrawsFunds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CardAnonymizerTest.cardanonymizer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CardAnonymizerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CardAnonymizerTest.testAnonymizeInvalidCardNumberLength.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CardAnonymizerTest.testAnonymizeValidCardNumber.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberUtilTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_InvalidFormat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_UnrecognizedCountryCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.PhoneNumberUtilTest.testGetCountryPhoneNr.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.PhoneNumberUtilTxtFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberUtilTxtFileTest.testGetCountryByPhoneNumber_DifferentFormats.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TimeStampTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TimeStampTest.getDate.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TimeStampTest.getTimestamp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TimeStampTest.getTimestampForGermany.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/sylwiabarteczko/Desktop/Pliki/BankAccount/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.PhoneNumberUtilTest">
-    <configuration name="BankAccount in BankAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankAccount" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/syll25/BankAccount" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardAnonymizerTest.testAnonymizeInvalidCardNumberLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAccount" />
       <extension name="coverage">
         <pattern>
@@ -83,9 +88,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="syll25.BankAccount" />
-      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.CardAnonymizerTest" />
-      <option name="METHOD_NAME" value="testAnonymizeInvalidCardNumberLength" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.BankAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,22 +109,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankAccount" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="syll25.BankAccount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
-      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.PhoneNumberUtilTest" />
-      <option name="METHOD_NAME" value="testGetCountryByPhoneNumber_ValidPolishNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PhoneNumberUtilTxtFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAccount" />
       <extension name="coverage">
@@ -136,13 +124,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TimeStampTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankAccount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="syll25.BankAccount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.TimeStampTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeStampTest.getDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankAccount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="syll25.BankAccount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="syll25.BankAccount" />
+      <option name="MAIN_CLASS_NAME" value="syll25.BankAccount.TimeStampTest" />
+      <option name="METHOD_NAME" value="getDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PhoneNumberUtilTest" />
+        <item itemvalue="JUnit.BankAccountTest" />
+        <item itemvalue="JUnit.TimeStampTest" />
         <item itemvalue="JUnit.PhoneNumberUtilTxtFileTest" />
-        <item itemvalue="JUnit.BankAccount in BankAccount" />
-        <item itemvalue="JUnit.PhoneNumberUtilTest.testGetCountryByPhoneNumber_ValidPolishNumber" />
-        <item itemvalue="JUnit.CardAnonymizerTest.testAnonymizeInvalidCardNumberLength" />
+        <item itemvalue="JUnit.TimeStampTest.getDate" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719466153266</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="BankAccount load dla txt oraz sqlite">
+      <option name="closed" value="true" />
+      <created>1719499434412</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719499434412</updated>
+    </task>
+    <task id="LOCAL-00010" summary="BankAccount load dla txt oraz sqlite">
+      <option name="closed" value="true" />
+      <created>1719499534336</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719499534336</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,5 +292,19 @@
     <MESSAGE value="BankAccount zadanie domowe" />
     <MESSAGE value="BankAccount load dla txt oraz sqlite" />
     <option name="LAST_COMMIT_MESSAGE" value="BankAccount load dla txt oraz sqlite" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BankAccount$CardAnonymizerTest.ic" NAME="CardAnonymizerTest Coverage Results" MODIFIED="1720061567709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>syll25.BankAccount.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BankAccount$TimeStampTest.ic" NAME="TimeStampTest Coverage Results" MODIFIED="1720236194456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>syll25.BankAccount.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BankAccount$BankAccountTest.ic" NAME="BankAccountTest Coverage Results" MODIFIED="1720236237838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>syll25.BankAccount.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BankAccount$TimeStampTest_getDate.ic" NAME="TimeStampTest.getDate Coverage Results" MODIFIED="1720062104579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>syll25.BankAccount.*</FILTER>
+    </SUITE>
   </component>
 </project>

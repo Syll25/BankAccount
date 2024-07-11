@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class PhoneNumberUtil {
 
-        private static final Map<String, String> countryCodeToCountryMap = new HashMap<>();
+        private final Map<String, String> countryCodeToCountryMap = new HashMap<>();
 
         public PhoneNumberUtil() {
             loadCountryCodes("CountryCode.txt");
@@ -38,7 +38,7 @@ public class PhoneNumberUtil {
 
         try (Connection connection = DriverManager.getConnection(url);
              Statement statement = connection.createStatement();
-             ResultSet resultSet = ((Statement) statement).executeQuery("SELECT code, country FROM CountryCodes")) {
+             ResultSet resultSet = statement.executeQuery("SELECT code, country FROM CountryCodes")) {
 
             while (resultSet.next()) {
                 String code = resultSet.getString("code");
@@ -57,11 +57,11 @@ public class PhoneNumberUtil {
         }
     }
 
-        public static String getCountryByPhoneNumber(String phoneNumber) throws IllegalArgumentException {
-            Pattern pattern = Pattern.compile("\\+(\\d+)[\\s-]?\\d+");
+        public String getCountryByPhoneNumber(String phoneNumber) throws IllegalArgumentException {
+            Pattern pattern = Pattern.compile("^\\+(\\d+)[\\s-]?\\d+$");
             Matcher matcher = pattern.matcher(phoneNumber);
 
-            if (matcher.matches()) {
+            if (matcher.find()) {
                 String countryCode = matcher.group(1);
                 String country = countryCodeToCountryMap.get(countryCode);
 

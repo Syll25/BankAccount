@@ -1,5 +1,7 @@
 package org.example;
 
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -29,7 +31,7 @@ public class Main {
                     System.out.println("Write your phone number with country code (+ code, number):");
                     String phoneNumber = scanner.nextLine();
                     try {
-                        String country = PhoneNumberUtil.getCountryByPhoneNumber(phoneNumber);
+                        String country = phoneNumberUtil.getCountryByPhoneNumber(phoneNumber);
                         System.out.println("Country for that phone number: " + country);
                     } catch (IllegalArgumentException e) {
                         System.out.println("Error: " + e.getMessage());
@@ -51,8 +53,9 @@ public class Main {
                     try {
                         System.out.println("Enter time zone (e.g., Europe/Warsaw):");
                         String timeZone = scanner.nextLine();
+                        ZonedDateTime now = ZonedDateTime.now(ZoneId.of(timeZone));
 
-                        Timestamp timestamp = new Timestamp(timeZone);
+                        Timestamp timestamp = new Timestamp(timeZone, now.getYear(), now.getMonthValue(), now.getDayOfYear(), now.getHour(), now.getMinute(), now.getSecond(), now.getNano() / 1_000_000);
                         System.out.println("Date in UTC: " + timestamp.getDate());
                         System.out.println("Timestamp in UTC: " + timestamp.getTimestamp());
                     } catch (Exception e) {
